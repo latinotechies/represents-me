@@ -1,24 +1,50 @@
-
   <!DOCTYPE html>
   <html>
     <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
-      <h1>Who Represents me?</h1>
-      <div>SEARCH BAR</div>
-      <button>Search</button>
+      <div class="container center-align">
+        <h1>Who Represents me?</h1>
+        <form>
+          <input class="input-field" id="userAddy" type="text" name="address" placeholder="street address">
+          <input type="submit" value="Search" id="search" class="waves-effect waves-light btn">
+        </form>
+
+        <!-- CARD CODE -->
+          <div class="row">
+            <div id="officialCard" class="col s12 m6 l3 ">
+              <div class="card small teal darken-3 hoverable">
+                <div class="card-image">
+                  <img id="officialPic" src="http://lorempixel.com/200/300/city/2/" >
+                </div>
+                <div class="card-content white-text">
+                  <span class="card-title flow-text" id="officialName"></span>
+                </div>
+                <div class="card-action">
+                  <a class="purple-lighten-5-text " id="officialSite" href="#">Visit Site</a>
+                  <a class="purple-lighten-5-text" id="officialPhone" href="#">Call</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
 
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+
     </body>
   </html>
